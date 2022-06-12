@@ -1,24 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import './components/components.css'
+import { GameBoard2 } from './components/GameBoard2';
+import GameBoard from './components/GameBoard';
+import PlayerSelection from './components/PlayerSelection';
+import image from './tictactoepngicon.png'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='heading'>Tic Tac Toe <img src={image} alt='logo' length={40} width={40}/></div>
+      <GameBoard2 />
+      {/* <PlayerSelection /> */}
     </div>
+    
   );
 }
 

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Merriweather:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
+
+
+.board {
+  /* border: solid black; */
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: rgba(28, 65, 65,0.65);
+}
+
+.heading {
+ text-align: center;
+ margin-top: 30px;
+ font-family: 'Macondo', cursive;
+ font-size: 300%;
+ font-weight: bold;
+}
+
+.row1,.row2,.row3,._11,._12,._13,._21,._22,._23,._31,._32,._33 {
+  border: 1px solid #010408;
+  padding: 30px;
+  border-radius: 5%;
+
+}
+
+._11,._12,._13,._21,._22,._23,._31,._32,._33 {
+ 
+   width: 50px;
+   height: 50px;
+   text-align: center;
+  position: sticky;                            
+   
+}
+
+table {
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  border: 10px double rgb(10, 11, 46);
+  /* border-style:  ; */
+  border-radius: 5%;
+  
+  
+}
+
+.playerselection {
+  margin-top: 10px;
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 150%;
+}
+
+
+
+.redplayer {
+    animation: flicker 1.5s infinite alternate;
+    color: red;
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.blueplayer {
+    /* animation: flicker 1.5s timing-function delay iteration-count direction fill-mode; */
+    animation: flicker 1.5ms infinite alternate;
+    color: blue;
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
+  
+  /* span>article {
+    margin-bottom:100px;
+    margin-left: 100px;
+  } */
+
+  .sideelement {    
+      border: 2px #010408 solid ;
+  }
+
+  /* .main_container {
+      display: flex-box;
+  } */
